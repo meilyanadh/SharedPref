@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dhita Meilyana"
+        android:textColor="@color/ungu"
+        android:textSize="20sp"
+        android:layout_marginTop="200dp"
+        />
+    <TextView
+        android:id="@+id/tv_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_uname"
+        android:text="admin"
+        android:textColor="@color/ungu"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/linebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        >
+        <Button
+            android:id="@+id/btn_fragpertama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" FRAGMENT PERTAMA "
+            android:background="@color/ungu"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_fragkedua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" FRAGMENT KEDUA "
+            android:background="@color/ungu"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</LinearLayout>

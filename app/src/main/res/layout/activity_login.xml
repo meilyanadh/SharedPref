@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/et_uname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="220dp"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_below="@id/et_uname"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/linebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pass"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@color/ungu"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+        />
+
+        <Button
+            android:id="@+id/btn_regis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Registrasi "
+            android:background="@color/ungu"
+            android:textColor="@color/white"
+            android:layout_marginLeft="120dp"
+            android:paddingHorizontal="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linebutton"
+        android:text=" Forgot Password ? "
+        android:background="@color/ungu"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp"/>
+
+
+</RelativeLayout>
